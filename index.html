@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }</style>
 </head>
 
 <body>
@@ -38,7 +43,7 @@
             <label for="amount" class="form-label">Amount</label>
             <div class="input-group">
               <span class="input-group-text" id="inputGroupPrepend2"><i class="fa-solid fa-dollar-sign"></i></span>
-              <input type="text" class="form-control" id="amount" aria-describedby="inputGroupPrepend2" required>
+              <input type="number" class="form-control" id="amount" aria-describedby="inputGroupPrepend2" required>
             </div>
           </div>
           <div class="col-md-6">
@@ -70,7 +75,7 @@
           </div>
           <div class="col-md-3">
             <label for="pc" class="form-label">Postal Code</label>
-            <input type="text" id="pc" class="form-control" required>
+            <input type="number" id="pc" class="form-control" required>
           </div>
 
           <div class="col-md-6">
